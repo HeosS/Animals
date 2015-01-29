@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie6"><![endif]-->
+<!--[if IE 7 ]><html class="ie7"><![endif]-->
+<!--[if IE 8 ]><html class="ie8"><![endif]-->
+<!--[if IE 9 ]><html class="ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html class=""><!--<![endif]-->
+	<head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+      <title>ANIMALS</title>
+      <meta name="author" content="HeosS" />
+	  <meta name="description" content="Juego html5, completa la palabra" />
+	  <meta name="keywords" content="Heoss, Diseño gráfico, Portafolio, Diseñador, Gráfico, Diseño gráfico Santiago-Chile, html5, Drag and drop" />
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="canonical" href="http://heoss.cl/">
+	  <link rel="shortcut icon" href="images/favicon.ico">
+      <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+	  <link rel="stylesheet" type="text/css" href="css/style-animals.css"/>
+	  <script src="js/modernizr.custom.js"></script>
+	  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src="http://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
+	</head>
+
+	<body>
+		<div class="preload">
+    		<div id="preload-1"></div>
+        	<div id="preload-2"></div>
+    	</div>
+        
+       	<div class="portada" id="inicio">
+        	<div class="barra"></div>
+        	<div class="recuadro"></div>
+            <div class="recuadro-1"></div>
+        	<div class="boton">
+            	<li><a href="#" class="btn" id="btn" ><i class="fa fa-chevron-right"></i> <b>Comenzar</b></a></li>
+        	</div>
+        </div>
+        
+        <div class="container">
+        	<div id="cbp-fwslider" class="cbp-fwslider">
+            	<div class="portada-1">
+                    <div id="lente"></div>
+                </div>
+                <div id="titulo"></div>
+                <div id="titulo-1"></div>
+                <div class="respuesta-incorrecta">
+                	<div id="mala"></div>
+                	<h2 class="ri">¡Inténtalo de nuevo!</h2>
+                </div>
+                
+                <ul>
+                
+	        		<li class="normal"><!--intro-->
+                    	<div class="content-intro">
+                        	<div class="marcador-intro"></div>
+                        	<div class="intro">
+                                <h2>Bienvenido</h2>
+                            </div>
+                            <div class="cont-intro">
+                            	<p><b>Animals</b> es un mini juego que consiste en completar los nombres de los animales que se muestran en pantalla. Este mini juego funciona con el método <b>Drag and Drop</b>, el cual hace más llamativa la forma de interactuar con el juego.</p> 
+                            	<p>Para implementar esta interacción se ocupó la librería <a href="http://jqueryui.com/" target="_blank"><b>Jquery UI</b></a>, la cual permite el funcionamiento <b>Drag and Drop</b>; la capacidad de respuesta del juego fue programado en base a <a href="http://jquery.com/" target="_blank"><b>Jquery</b></a>.</p>
+                            </div>
+                        </div>                    
+                    </li>
+                    
+                    <li class="random"><!--actividad-->
+                    	<div class="content random">
+                        	<div class="scroller">
+                            	<div class="actividad">
+                                	<div class="marcador-intro marcador-intro-md"></div>
+                            		<div class="intro intro-md">
+                                		<h2>¿Cuál es mi nombre?</h2>
+                            		</div>
+                                	<p></p>
+                                    <div class="recuadro up-recuadro recuadro-md"></div>
+                                    <div class="image"><img src="images/slide-1.png"></div>
+                                    <div class="soporte"></div>
+                                	<div class="frase-incompleta">
+                                		<p>Á<b class="cuadro-respuesta-1" data="1"></b><b class="cuadro-respuesta-2" data="2"></b><b class="cuadro-respuesta-3" data="3"></b>LA</p>
+                                	</div>
+                                	<div class="opcion">
+                                		<div class="opciones">
+                                			<div class="respuesta-1 op1" draggable="true" data="1">G</div>
+                                			<div class="respuesta-2 op1" draggable="true" data="2">U</div>
+                                            <div class="respuesta-3 op1" draggable="true" data="3">I</div>
+                                		</div>
+                                	</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="respuesta-buena">
+                			<div class="resplandor"></div>
+                			<div class="buena"></div>
+                			<h2 class="rb">¡Muy bien!<br>La respuesta es:</h2>
+                            <p class="resp">Águila</p>
+                            <div>
+                            	<h2 class="avanza">Avanza</h2>
+                            </div>
+                    		<div class="btn-next">&gt;</div>
+                		</div>
+                		<div class="mira-la-respuesta">
+                			<div class="mala"></div>
+                			<h2 class="ml">¡Mira la respuesta<br>correcta!</h2>
+                            <p class="resp">Águila</p>
+                            <div>
+                            	<h2 class="avanza">Avanza</h2>
+                            </div>
+                	    	<div class="btn-next-mala">&gt;</div>
+               			</div> 
+                    </li><!--actividad-->
+                    
+                    <li class="random"><!--actividad-->
+                    	<div class="content random">
+                        	<div class="scroller">
+                            	<div class="actividad">
+                                	<div class="marcador-intro marcador-intro-md"></div>
+                            		<div class="intro intro-md">
+                                		<h2>¿Cuál es mi nombre?</h2>
+                            		</div>
+                                	<p></p>
+                                    <div class="recuadro up-recuadro recuadro-md"></div>
+                                    <div class="image"><img src="images/slide-2.png"></div>
+                                    <div class="soporte"></div>
+                                	<div class="frase-incompleta">
+                                		<p><b class="cuadro-respuesta-1" data="1"></b><b class="cuadro-respuesta-2" data="2"></b>R<b class="cuadro-respuesta-3" data="3"></b>O</p>
+                                	</div>
+                                	<div class="opcion">
+                                		<div class="opciones o2">
+                                        	<div class="respuesta-1 op2" draggable="true" data="1">Z</div>
+                                			<div class="respuesta-2 op2" draggable="true" data="2">O</div>
+                                			<div class="respuesta-3 op2" draggable="true" data="3">R</div>
+                                		</div>
+                                	</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="respuesta-buena">
+                			<div class="resplandor"></div>
+                			<div class="buena"></div>
+                			<h2 class="rb">¡Muy bien!<br>La respuesta es:</h2>
+                            <p class="resp">Zorro</p>
+                            <div>
+                            	<h2 class="avanza">Avanza</h2>
+                            </div>
+                    		<div class="btn-next">&gt;</div>
+                		</div>
+                		<div class="mira-la-respuesta">
+                			<div class="mala"></div>
+                			<h2 class="ml">¡Mira la respuesta<br>correcta!</h2>
+                            <p class="resp">Zorro</p>
+                            <div>
+                            	<h2 class="avanza">Avanza</h2>
+                            </div>
+                	    	<div class="btn-next-mala">&gt;</div>
+               			</div> 
+                    </li><!--actividad-->
+                    
+                    <li class="random"><!--actividad-->
+                    	<div class="content random">
+                        	<div class="scroller">
+                            	<div class="actividad">
+                                	<div class="marcador-intro marcador-intro-md"></div>
+                            		<div class="intro intro-md">
+                                		<h2>¿Cuál es mi nombre?</h2>
+                            		</div>
+                                	<p></p>
+                                    <div class="recuadro up-recuadro recuadro-md"></div>
+                                    <div class="image"><img src="images/slide-3.png"></div>
+                                    <div class="soporte"></div>
+                                	<div class="frase-incompleta">
+                                		<p><b class="cuadro-respuesta-1" data="1"></b><b class="cuadro-respuesta-2" data="2"></b><b class="cuadro-respuesta-3" data="3"></b>O</p>
+                                	</div>
+                                	<div class="opcion">
+                                		<div class="opciones">
+                                			<div class="respuesta-1 op3" draggable="true" data="1">L</div>
+                                			<div class="respuesta-2 op3" draggable="true" data="2">O</div>
+                                            <div class="respuesta-3 op3" draggable="true" data="3">B</div>
+                                		</div>
+                                	</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="respuesta-buena">
+                			<div class="resplandor"></div>
+                			<div class="buena"></div>
+                			<h2 class="rb">¡Muy bien!<br>La respuesta es:</h2>
+                            <p class="resp">Lobo</p>
+                            <div>
+                            	<h2 class="avanza">Avanza</h2>
+                            </div>
+                    		<div class="btn-next">&gt;</div>
+                		</div>
+                		<div class="mira-la-respuesta">
+                			<div class="mala"></div>
+                			<h2 class="ml">¡Mira la respuesta<br>correcta!</h2>
+                            <p class="resp">Lobo</p>
+                            <div>
+                            	<h2 class="avanza">Avanza</h2>
+                            </div>
+                	    	<div class="btn-next-mala">&gt;</div>
+               			</div> 
+                    </li><!--actividad-->
+                    
+                    <li class="random"><!--actividad-->
+                    	<div class="content random">
+                        	<div class="scroller">
+                            	<div class="actividad">
+                                	<div class="marcador-intro marcador-intro-md"></div>
+                            		<div class="intro intro-md">
+                                		<h2>¿Cuál es mi nombre?</h2>
+                            		</div>
+                                	<p></p>
+                                    <div class="recuadro up-recuadro recuadro-md"></div>
+                                    <div class="image"><img src="images/slide-4.png"></div>
+                                    <div class="soporte"></div>
+                                	<div class="frase-incompleta">
+                                		<p>T<b class="cuadro-respuesta-1" data="1"></b>G<b class="cuadro-respuesta-2" data="2"></b><b class="cuadro-respuesta-3" data="3"></b></p>
+                                	</div>
+                                	<div class="opcion">
+                                		<div class="opciones">
+                                			<div class="respuesta-1 op4" draggable="true" data="1">I</div>
+                                			<div class="respuesta-2 op4" draggable="true" data="2">R</div>
+                                            <div class="respuesta-3 op4" draggable="true" data="3">E</div>
+                                		</div>
+                                	</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="respuesta-buena">
+                			<div class="resplandor"></div>
+                			<div class="buena"></div>
+                			<h2 class="rb">¡Muy bien!<br>La respuesta es:</h2>
+                            <p class="resp">Tigre</p>
+                            <div>
+                            	<h2 class="avanza">Avanza</h2>
+                            </div>
+                    		<div class="btn-next">&gt;</div>
+                		</div>
+                		<div class="mira-la-respuesta">
+                			<div class="mala"></div>
+                			<h2 class="ml">¡Mira la respuesta<br>correcta!</h2>
+                            <p class="resp">Tigre</p>
+                            <div>
+                            	<h2 class="avanza">Avanza</h2>
+                            </div>
+                    		<div class="btn-next-mala">&gt;</div>
+                		</div> 
+                    </li><!--actividad-->
+                    
+                    <li class="random"><!--actividad-->
+                    	<div class="content">
+                        	<div class="scroller">
+                            	<div class="actividad">
+                                	<div class="marcador-intro marcador-intro-md"></div>
+                            		<div class="intro intro-md">
+                                		<h2>¿Cuál es mi nombre?</h2>
+                            		</div>
+                                	<p></p>
+                                    <div class="recuadro up-recuadro recuadro-md"></div>
+                                    <div class="image"><img src="images/slide-5.png"></div>
+                                    <div class="soporte"></div>
+                                	<div class="frase-incompleta">
+                                		<p>P<b class="cuadro-respuesta-1" data="1"></b><b class="cuadro-respuesta-2" data="2"></b><b class="cuadro-respuesta-3" data="3"></b>A</p>
+                                	</div>
+                                	<div class="opcion">
+                                		<div class="opciones">
+                                			<div class="respuesta-1 op5" draggable="true" data="1">A</div>
+                                			<div class="respuesta-2 op5" draggable="true" data="2">N</div>
+                                            <div class="respuesta-3 op5" draggable="true" data="3">D</div>
+                                		</div>
+                                	</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="respuesta-buena">
+                			<div class="resplandor"></div>
+                			<div class="buena"></div>
+                			<h2 class="rb">¡Muy bien!<br>La respuesta es:</h2>
+                            <p class="resp">Panda</p>
+                    		<div>
+                            	<h2 class="avanza">Avanza</h2>
+                            </div>
+                            <div class="btn-next">&gt;</div>
+                		</div>
+                		<div class="mira-la-respuesta">
+                			<div class="mala"></div>
+                			<h2 class="ml">¡Mira la respuesta<br>correcta!</h2>
+                            <p class="resp">Panda</p>
+                            <div>
+                            	<h2 class="avanza">Avanza</h2>
+                            </div>
+                    		<div class="btn-next-mala">&gt;</div>
+                		</div> 
+                    </li><!--actividad-->
+                    
+                    <li class="random ult">
+                    </li><!--falso-->
+                  
+                </ul>
+            
+            	<div class="fin"><!--fin-->
+                	<div class="content">
+                    	<div class="scroller">
+                        	<div class="content-intro">
+                        		<div class="marcador-intro"></div>
+                        		<div class="intro">
+                                	<h2>Resultados</h2>
+                            	</div>
+                            	<div class="cont-intro">
+                            		<p>Muy bien, puedes ver tus resultados.</p>
+                            		<div class="score">
+                            			<div id="score">
+                                			<div id="trofeo"><i class="fa fa-trophy"></i></div>
+                                    		<h2>Resultado</h2>
+                                		</div>
+                                		<div class="resultado-buenas">
+                                    		<b>Buenas :&nbsp;&nbsp;</b>
+                                		</div>
+                                		<div class="resultado-malas">
+                                    		<b>Malas :&nbsp;&nbsp;</b>
+                                		</div>
+                            		</div>
+                        		</div>	
+                    		</div>
+                        </div>
+                    </div>
+                    <div id="return"><i class="fa fa-undo"></i></div> 
+                </div>
+            
+            </div>
+        
+        </div>
+        <div class="orientation"></div>
+        <audio src="sounds/boton1.mp3" preload></audio>
+        <audio src="sounds/boton2.mp3" preload></audio>
+        
+	<script src="js/animals.js"></script>
+    <script src="js/default.js"></script>
+    <script src="js/plugins-animals.js"></script>
+    
+    <script type="text/javascript">
+		$(function(){
+			$('#cbp-fwslider').cbpFWSlider();
+			_return = 0;
+		});
+	</script>
+    
+	</body>
+</html>
